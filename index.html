@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inputs{
+            width:250px;height: 25px;margin-left: 50px;
+            margin-bottom: 5px;
+        }
+        .labels {
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- pour rediriger l'utilisateur vers le site esprit -->
+    <a onmouseover="goToEsprit()">ESPRIT</a>
+    <br />
+    <span style="font-size: 30px;">nom:</span>
+    <input style="width:250px;height: 25px;margin-left: 50px;" type="text" id="nom" class="nom" name="input"
+        value="ali" />
+    <br />
+    <span style="font-size: 30px;">prenom:</span>
+    <input style="width:250px;height: 25px;margin-left: 50px;" type="text" id="nom" name="input" value="bensalah" />
+    <br />
+    <span style="font-size: 30px;">age:</span>
+    <input style="width:250px;height: 25px;margin-left: 50px;" type="number" id="nom" name="input" value="25" />
+    <br /><br /><br />
+    valeur de x : <input type="number" id="x" />
+    valeur de y : <input type="number" id="y" />
+    <button onclick="calculerSomme()">calculer</button>
+    <p id="values"></p>
+    <div id="content">
+
+    </div>
+    <button id="removeInput" onclick="removeInput()" style="background-color: red;color: white;">supprimer Input</button>
+    <br/><br/>
+    <table border="1">
+        <thead>
+            <th>key</th>
+            <th>value</th>
+        </thead>
+        <tbody id="tableContent">
+            <!-- <tr></tr> Répeter-->
+        </tbody>
+    </table>
+
+    <br/></br>
+    <form>
+        <label class="labels">nom:</label>
+        <input type="text" class="inputs" name="inputsForm" placeholder="write your name here.." />
+        <br/>
+        <label class="labels">age:</label>
+        <input type="number" class="inputs" name="inputsForm" placeholder="write your age here.." />
+        <br/>
+        <label class="labels">classe:</label>
+        <select class="inputs" name="inputsForm">
+            <option value="">selectionner un classe</option>
+            <option value="2A29">2A29</option>
+            <option value="2A30">2A30</option>
+            <option value="2A31">2A31</option>
+        </select>
+    </br>
+    <label class="labels">Gender</label>
+     
+    M:<input type="radio" name="inputsForm">
+    F:<input type="radio" name="inputsForm"><br/>
+    <button type="submit" id="envoyer">Envoyer</button>
+    </form><br/>
+    <p id="checkInputs"></p>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
